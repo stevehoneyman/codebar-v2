@@ -1,0 +1,145 @@
+
+/* reset
+----------------------------------------------------------------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+code,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+body {
+  font-family: 'open sans';
+  color: #1d1d1b;
+  background: #eee;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p,
+code {
+  margin-bottom: 1rem;
+}
+
+/* layout
+----------------------------------------------------------------------------- */
+#site-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* header
+----------------------------------------------------------------------------- */
+.header-top {
+  height: 48px;
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* navigation
+----------------------------------------------------------------------------- */
+.main-nav {
+  display: flex;
+}
+
+.main-nav li {
+  margin-right: 1rem;
+}
+
+.main-nav li:last-of-type {
+  margin-right: 0;
+}
+
+.main-nav li:after {
+  content: '|';
+  margin-left: 1rem;
+}
+
+.main-nav li:last-of-type:after {
+  content: '';
+}
+
+.main-nav li a {
+  font-size: .875rem;
+  text-decoration: none;
+}
+
+
+/* main
+----------------------------------------------------------------------------- */
+
+/* blog listing page
+----------------------------------------------------------------------------- */
+article img {
+  max-width: 240px;
+}
+
+article p {
+  font-size: .875rem;
+}
+
+/* utilities
+----------------------------------------------------------------------------- */
+.wrap {
+  padding-left: 11.1%;
+  padding-right: 11.1%;
+}
+
+.insulate {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* wordPress
+----------------------------------------------------------------------------- */
+
+.alignleft {
+  margin-right: 1rem;
+  float: left;
+}
+
+.alignright {
+  margin-left: 1rem;
+  float: right;
+}
+
+/* fixes
+----------------------------------------------------------------------------- */
+p:has(img) {
+  content: "";
+  display: table;
+  clear: both;
+}
