@@ -14,6 +14,7 @@
 		<div id="site-wrapper">
 			<header class="wrap">
 				<div class="header-top">
+					<button class="navicon"></button>
 					<nav>
 						<?php wp_nav_menu(array(
 							'menu_id' => 'nav',
