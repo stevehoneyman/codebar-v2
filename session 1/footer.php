@@ -5,7 +5,7 @@
 		<footer role="contentinfo"></footer>
 	</div><!-- site wrapper ends-->
 
-	<!-- wp_footer() -->
+	<!-- wp_footer() hook -->
 	<?php wp_footer(); ?>
 	</body>
 </html>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!-- this is header.php, it displays all the usual meta information essential for a html document
 and would also usually contain the header, navigation and sometimes banner elements. There's also the
-wp_head() hook. WP uses this as a 'hook' to load files such as stylesheets (from functions.php) and
-meta tags, scripts and styles from other plugins -->
+wp_head() hook. WordPress uses this as a 'hook' to load files such as stylesheets (from functions.php)
+and meta tags, scripts and styles from other plugins -->
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -21,7 +21,9 @@ meta tags, scripts and styles from other plugins -->
 				<div class="header-top">
 					<!-- <button class="navicon"></button> -->
 					<nav>
+						<!-- wp_nav_menu is a function used to display a navigation menu -->
 						<?php wp_nav_menu(array(
+							// parameters to set css id's and classes and other information (eg set location in dashboard > menus)
 							'menu_id' => 'nav',
 							'menu_class' => 'main-nav',
 							'theme_location' => 'header-menu',

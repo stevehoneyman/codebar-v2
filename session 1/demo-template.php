@@ -1,5 +1,5 @@
 <?php	/* Template Name: Template Demo */ get_header();?>
-<!-- This is a custom template that allows you to created bespoke, custom layout.
+<!-- This is a custom template that allows you to create bespoke, custom layout.
 Templates are accessible from the templates section in the content area -->
 
 	<code>this is the demo-template.php</code>

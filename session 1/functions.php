@@ -5,7 +5,7 @@
 // enabling menus, featured images and excerpts
 // adding filters
 // adding custom post-types
-// adding functions and snippets of code that can be applied sitewide
+// adding additional functions and snippets of code that can be applied sitewide
 
 // enqueue stylesheets, ie add stylesheet(s)
 function set_theme_styles() {
@@ -23,8 +23,8 @@ add_action('wp_enqueue_scripts' , 'set_theme_scripts');
 function register_theme_menus() {
 	register_nav_menus( // register multiple custom menus
 		array(
-			// header-menu is in thet wp_nav_menu array in header.php
-			// Header Menu is the name of the menu as it appears in the Menus section of the dashboard
+			// header-menu is in the wp_nav_menu array in header.php
+			// Header Menu is the name of the menu as it appears in the menus section of the dashboard
 			'header-menu' => __('Header Menu'),
 			'footer-menu' => __('Footer Menu')
 			)
